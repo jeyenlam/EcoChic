@@ -296,4 +296,39 @@ input{
 .home-level1{
   width: 100%;
   background-size: contain;
+/* SIGN UP FORM */
+
+.signUpForm{
+  background-color: #D5DCDC;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.signUpForm form{
+  height: 30%;
+  /* background-color: rebeccapurple; */
+  padding: 0 1rem;
+}
+
+.label-div, .input-div{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  caret-color: transparent;
+  /* background-color: #B87F45; */
+
+}
+
+.signUpForm form div input{
+  width: 80%;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  border: none;
+  align-items: center;
+  outline: none;
 }
