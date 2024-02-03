@@ -5,6 +5,7 @@ import LogInForm from './components/LogInForm.js';
 import Navbar from './components/Navbar.js';
 import Home from './pages/Home.js';
 import Auth from './pages/Auth.js';
+import SignUpForm from './components/SignUpForm.js'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route index element={ <Home/> } /> //default page
         <Route path='/home' element={ <Home/> } />
         <Route path='/auth' element={ <Auth/> } />
+        <Route path='/signUp' element={ <SignUpForm/> } />
       </Routes>
     </BrowserRouter>
   );

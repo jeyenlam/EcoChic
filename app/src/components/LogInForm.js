@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function LogInForm () {
 
@@ -8,13 +9,19 @@ function LogInForm () {
     const rawFormData = new FormData(e.target)
     const formData = Object.fromEntries(rawFormData)
 
+    // TODO : once JSON server is working, add something here that queries 
+    // for the user from the JSON db and checks to see if their password matches 
+
     console.log(formData);
   }
 
 
   return (
     <div className='logInForm'>
-      <h1>Log In</h1>
+      <div>
+        <h1>Log In</h1>
+        <p> Don't have an account?  <Link to={`/signUp`}> Sign Up Here </Link></p>
+      <div>
       <form id='logInForm' onSubmit={logIn}>
         <div className='label-div'>
           <label htmlFor='username'>Username</label>
@@ -26,6 +33,8 @@ function LogInForm () {
         </div> 
         <button type='submit' id='logInButton'>Log In</button>       
       </form>
+      </div>
+      </div>
     </div>
   )
 }
