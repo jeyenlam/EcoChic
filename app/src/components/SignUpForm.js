@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Navbar from '../components/Navbar.js'
 
 function SignUpForm () {
+
+    // TODO: 
+    // [ X ] persist this data to a JSON server 
+    // [   ] query and API endpoint to get the (lat,lon) coordinates of a 
+    //      person's address and store that instead of a string address 
+    // [ X ] integrate this component into the login form page 
+    // [   ] if there is time, allow a user to add a profile pic to a user's profile 
+
+  const eclecticRef = useRef(null)
+  const vintageRef = useRef(null)
+  const y2kRef = useRef(null)
+  const gothRef = useRef(null)
+  const animeRef = useRef(null)
+  const hippieRef = useRef(null)
+  const minimalistRef = useRef(null)
+  const sportyRef = useRef(null)
+  const preppyRef = useRef(null)
 
   const SignUp = (e) => {
     e.preventDefault();
@@ -9,14 +26,32 @@ function SignUpForm () {
     const rawFormData = new FormData(e.target)
     const formData = Object.fromEntries(rawFormData)
 
-    // TODO: 
-    // [  ] persist this data to a JSON server 
-    // [  ] query and API endpoint to get the (lat,lon) coordinates of a 
-    //      person's address and store that instead of a string address 
-    // [  ] integrate this component into the login form page 
-    // [  ] if there is time, allow a user to add a profile pic to a user's profile 
+    const user = {
+      username : formData.username, 
+      firstName : formData.firstName, 
+      lastName : formData.lastName, 
+      password : formData.password, 
+      phoneNumber : formData.phoneNumber, 
+      email : formData.email, 
+      address : formData.address,
+      style : {
+        eclectic: eclecticRef.current.checked, 
+        vintage: vintageRef.current.checked, 
+        y2k: y2kRef.current.checked, 
+        goth: gothRef.current.checked, 
+        anime: animeRef.current.checked, 
+        hippie: hippieRef.current.checked, 
+        minimalist: minimalistRef.current.checked, 
+        sporty: sportyRef.current.checked, 
+        preppy: preppyRef.current.checked
+      }
+    }
 
-    console.log(formData);
+    fetch('http://localhost:3030/Users', {
+      method: 'POST',
+      body: JSON.stringify(user)
+    })
+    // console.log(user)
   }
 
 
@@ -25,23 +60,14 @@ function SignUpForm () {
         <Navbar/>
       <h1>SignUp</h1>
       <form id='signUpForm' onSubmit={SignUp}>
-        {/* <div className='label-div'>
-          <label htmlFor='firstName'>First Name</label>
-          <label htmlFor='lastName'>Last Name</label>
-          <label htmlFor='userName'>Username</label>
-          <label htmlFor='password'>Password</label>
-          <label htmlFor='email'>Email</label>
-          <label htmlFor='phoneNumber'>Phone Number</label>
-          <label htmlFor='address'>Address</label>
-        </div> */}
         <div className='input-div'>
             <label htmlFor='firstName'>First Name</label>
-            <input type='text' id='firstName' name='firstname'placeholder='First Name' />
+            <input type='text' id='firstName' name='firstName'placeholder='First Name' />
 
             <label htmlFor='lastName'>Last Name</label>
-            <input type='text' id='lastName' name='firstname' placeholder='Last Name'/>
+            <input type='text' id='lastName' name='lastName' placeholder='Last Name'/>
 
-            <label htmlFor='userName'>Username</label>
+            <label htmlFor='username'>Username</label>
             <input type='text' id='username' name='username'placeholder='Username' />
 
             <label htmlFor='password'>Password</label>
@@ -57,18 +83,32 @@ function SignUpForm () {
             <input type='text' id='address' name='address'placeholder='Address' />
 
             <label htmlFor='style'>What type of style do you gravitate towards?</label>
-            <select  id='style' name='style'> 
-                <option background-image='url(../pictures/y2k.jpg);' value='eclectic'>Choose a Style</option>
-                <option value='eclectic'>Eclectic</option>
-                <option value='vintage'>Vintage</option>
-                <option value='y2k'>Y2k</option>
-                <option value='goth'>Goth</option>
-                <option value='anime'>Anime</option>
-                <option value='hippie'>Hippie</option>
-                <option value='minimalist'>Minimalist</option>
-                <option value='sporty'>Sporty</option>
-                <option value='preppy'>Preppy</option>
-            </select>  
+            <label htmlFor='eclectic'>Eclectic</label>
+            <input type='checkbox' defaultChecked={false} ref={eclecticRef}/>
+
+            <label htmlFor='vintage'>Vintage</label>
+            <input type='checkbox' defaultChecked={false} ref={vintageRef}/>
+
+            <label htmlFor='y2k'>Y2k</label>
+            <input type='checkbox' defaultChecked={false} ref={y2kRef}/>
+
+            <label htmlFor='goth'>Goth</label>
+            <input type='checkbox' defaultChecked={false} ref={gothRef}/>
+
+            <label htmlFor='anime'>Anime</label>
+            <input type='checkbox' defaultChecked={false} ref={animeRef}/>
+
+            <label htmlFor='hippie'>Hippie</label>
+            <input type='checkbox' defaultChecked={false} ref={hippieRef}/>
+
+            <label htmlFor='minimalist'>Minimalist</label>
+            <input type='checkbox' defaultChecked={false} ref={minimalistRef}/>
+
+            <label htmlFor='sporty'>Sporty</label>
+            <input type='checkbox' defaultChecked={false} ref={sportyRef}/>
+
+            <label htmlFor='preppy'>Preppy</label>
+            <input type='checkbox' defaultChecked={false} ref={preppyRef} />
         </div> 
         <button type='submit' id='signUpButton'>Sign Up</button>       
       </form>
@@ -78,22 +118,3 @@ function SignUpForm () {
 
 export default SignUpForm
 
-
-// Username 
-// First Name 
-// Last Name 
-// Password
-// Phone Number
-// Email
-// Address (add functionality that 
-// Style Form (collage/mood board pictures to symbolise for each one)
-// What type of style do you gravitate towards?
-// Eclectic  
-// Vintage
-// Y2k 
-// Goth 
-// Anime 
-// Hippie
-// Minimalist
-// Sporty 
-// Preppy

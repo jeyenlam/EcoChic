@@ -1,9 +1,137 @@
 {
-    "Brands" : [
-
-    ],
-    
-    "Users" : [
-
-    ]
+  "Brands": [
+    {
+      "brandName": "temp brand name ",
+      "administratorName": "temp admin name",
+      "phoneNumber": 12345,
+      "email": "temp@gmail.com",
+      "background Paragraph": "temp body paragraph",
+      "brandLogo": "temp logo",
+      "tags": {
+        "country": "temp country",
+        "city": "temp city",
+        "provinceOrState": "temp state",
+        "region": "temp region",
+        "style": {
+          "eclectic": false,
+          "vintage": false,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": false,
+          "sporty": false,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "Profile Name": "temp profile name",
+          "Profile png": "temp profile pic",
+          "Comment": "temp comment",
+          "numStars": "temp number of stars"
+        },
+        {
+          "Profile Name": "temp profile name",
+          "Profile png": "temp profile pic",
+          "Comment": "temp comment",
+          "numStars": "temp number of stars"
+        },
+        {
+          "Profile Name": "temp profile name",
+          "Profile png": "temp profile pic",
+          "Comment": "temp comment",
+          "numStars": "temp number of stars"
+        }
+      ]
+    },
+    {
+      "brandName": "temp brand name ",
+      "administratorName": "temp admin name",
+      "phoneNumber": 12345,
+      "email": "temp@gmail.com",
+      "background Paragraph": "temp body paragraph",
+      "brandLogo": "temp logo",
+      "tags": {
+        "country": "temp country",
+        "city": "temp city",
+        "provinceOrState": "temp state",
+        "region": "temp region",
+        "style": {
+          "eclectic": false,
+          "vintage": false,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": false,
+          "sporty": false,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "Profile Name": "temp profile name",
+          "Profile png": "temp profile pic",
+          "Comment": "temp comment",
+          "numStars": "temp number of stars"
+        },
+        {
+          "Profile Name": "temp profile name",
+          "Profile png": "temp profile pic",
+          "Comment": "temp comment",
+          "numStars": "temp number of stars"
+        },
+        {
+          "Profile Name": "temp profile name",
+          "Profile png": "temp profile pic",
+          "Comment": "temp comment",
+          "numStars": "temp number of stars"
+        }
+      ]
+    }
+  ],
+  "Users": [
+    {
+      "username": "temp username",
+      "firstName": "temp first name",
+      "lastName": "temp last name ",
+      "password": "temp password",
+      "phoneNumber": "temp phone number ",
+      "email": "temp email",
+      "address": "temp address",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "b82a",
+      "username": "hi",
+      "firstName": "Lavanya",
+      "lastName": "Menon",
+      "password": "1234",
+      "phoneNumber": "4039261630",
+      "email": "lavanyamenon1215@gmail.com",
+      "address": "blah",
+      "style": {
+        "eclectic": true,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": true
+      }
+    }
+  ]
 }
