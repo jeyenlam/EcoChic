@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rubik:wght@400;500&display=swap');
+
+/* --- GENERIC STYLES --- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+:root{
+  --primary: #;
+}
+
+button{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  background-color: #C0C49B;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #B87F45;
+  transition: .2s ease-in-out;
+}
+
+/* --- NAV BAR ---*/
+
+.navbar{
+  width: 100%;
+  height: 4rem;
+  background-color: #497147;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.navbar-options{
+  width: 50%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul{
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+}
+
+.navbar ul li{
+  list-style: none;
+}
+
+.navbar ul li:hover{
+  cursor: pointer;
+  color: #C0C49B;
+}
+
+
+/* --- LOGIN FORM ---*/
+.logInForm{
+  width: 400px;
+  height: 400px;
+  background-color: #D5DCDC;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logInForm form{
+  height: 30%;
+  /* background-color: rebeccapurple; */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 0 1rem;
+}
+
+.label-div, .input-div{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  caret-color: transparent;
+  /* background-color: #B87F45; */
+
+}
+
+.logInForm form div input{
+  width: 80%;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  border: none;
+  align-items: center;
+  outline: none;
+}
