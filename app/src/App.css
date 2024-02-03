@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rubik:wght@400;500&display=swap');
 
-/* --- GENERIC STYLES --- */
+/* ------ GENERIC STYLES ------ */
 
 *{
   margin: 0;
@@ -30,7 +30,7 @@ button:hover{
   transition: .2s ease-in-out;
 }
 
-/* --- NAV BAR ---*/
+/* ------ NAV BAR ------*/
 
 .navbar{
   width: 100%;
@@ -41,10 +41,12 @@ button:hover{
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
+  caret-color: transparent;
 }
 
 .navbar-options{
   width: 50%;
+  min-width: 450px;
   /* background-color: aquamarine; */
   display: flex;
   justify-content: space-around;
@@ -67,7 +69,8 @@ button:hover{
 }
 
 
-/* --- LOGIN FORM ---*/
+/* ------ LOGIN FORM ------*/
+
 .logInForm{
   width: 400px;
   height: 400px;

@@ -8,7 +8,6 @@ const LogInForm = () => {
         <div className='label-div'>
           <label htmlFor='username'>Username</label>
           <label htmlFor='password'>Password</label>
-          
         </div>
         <div className='input-div'>
           <input type='text' id='username' name='username'/>
@@ -16,7 +15,6 @@ const LogInForm = () => {
         </div>        
       </form>
       <button type='submit' id='logInButton'>Log In</button>
-
     </div>
   )
 }
