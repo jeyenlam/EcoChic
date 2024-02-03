@@ -9,9 +9,32 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
 :root{
-  --primary: #;
+  --light-green: #E5F4E3;
+  --purple: #4C2C72;
+  --green: #497147;
+  --blue: #5DA9E9;
+}
+
+.light-green{
+  color: var(--light-green);
+}
+
+.green{
+  color: var(--green);
+}
+
+.purple{
+  color: var(--purple);
+}
+
+.blue{
+  color: var(--blue);
+}
+
+.page-content{
+  padding: 6rem;
+  width: 100%;
 }
 
 button{
@@ -19,24 +42,32 @@ button{
   height: 2rem;
   border-radius: 1rem;
   border: none;
-  color: white;
-  background-color: #C0C49B;
 }
 
 button:hover{
   cursor: pointer;
   transform: scale(1.05);
-  background-color: #B87F45;
   transition: .2s ease-in-out;
 }
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--purple);
+}
+
+input{
+  outline: none;
+}
+
 
 /* ------ NAV BAR ------*/
 
 .navbar{
   width: 100%;
   height: 4rem;
-  background-color: #497147;
-  color: white;
+  /* background-color: var(--purple); */
+  color: var(--light-green);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +75,9 @@ button:hover{
   caret-color: transparent;
 }
 
+.navbar h1{
+  color: #c1e0bd;
+}
 .navbar-options{
   width: 50%;
   min-width: 450px;
@@ -63,18 +97,17 @@ button:hover{
   list-style: none;
 }
 
-.navbar ul li:hover{
-  cursor: pointer;
-  color: #C0C49B;
+.login-button{
+  background-color: var(--purple);
+  color: var(--light-green);
 }
-
 
 /* ------ LOGIN FORM ------*/
 
 .logInForm{
   width: 400px;
   height: 400px;
-  background-color: #D5DCDC;
+  background-color: var(--light-green);
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
@@ -108,4 +141,159 @@ button:hover{
   border: none;
   align-items: center;
   outline: none;
+}
+
+
+/* ------ INTRO PAGE ------*/
+
+.intro-animation{
+  display: block;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;  
+}
+
+.letters{
+  display: flex;
+  flex-wrap:wrap;
+  min-height: 100vh;
+  /* background-color: #497147; */
+  overflow: hidden;
+  height: 100vh;
+  align-items: center;
+}
+
+.letters span{
+  margin-top: -.8rem;
+  position: relative;
+  display: inline-block;
+  font-size: 10rem;
+  caret-color: transparent;
+  font-weight: 600;
+}
+
+@keyframes colorChange {
+  0% { color: #E5F4E3; }
+  25% { color: #4C2C72; }
+  50% { color: #5DA9E9; }
+  75% { color: #497147; }
+  100% { color: black; }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.language-box{
+  display: none;
+}
+
+
+/* ------ ABOUT PAGE ------*/
+
+.about-level1{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.about-page h1{
+  font-size: 4rem;
+}
+
+.about-page p{
+  padding: 2rem;
+}
+
+.about-level2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-level2 img{
+  width: 300px;
+  margin-right: 1rem;
+}
+
+
+.about-level2, .about-level3{
+  margin-top: 4rem;
+}
+
+.profile-box{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  /* background-color: #497147; */
+}
+
+.profile-card{
+ justify-content: center;
+ text-align: center;
+}
+
+/* ------ STORES PAGE ------*/
+
+/* store list & search bar */
+.stores-level1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.stores-level1 input{
+  width: 25%;
+  padding: .5rem;
+  border: 2px solid var(--green);
+}
+
+/* rows of store widgets */
+.stores-level2, .home-level2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4.6rem;
+}
+
+.store-widget{
+  margin-top: 2rem;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #c1e0bd;
+  border-radius: 2rem;
+}
+
+.store-widget .store-logo{
+  border-radius: 2rem 2rem 0 0;
+  background-size: cover;
+}
+
+.store-widget .detail{
+  border-radius: 0 0 2rem 2rem;
+  padding: 2rem;
+}
+
+.store-widget .detail h3{
+  margin-bottom: .5rem;
+}
+
+/* ------ HOME PAGE ------*/
+.home-level1{
+  width: 100%;
+  background-size: contain;
 }

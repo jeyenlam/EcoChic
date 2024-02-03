@@ -4,16 +4,25 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <h1>EcoChic</h1>
+      <h1>
+        <span className='green'>Eco</span>
+        <span className='light-green'>Chic</span>
+        </h1>
       <div className='navbar-options'>
         <ul>
-          <li><Link to='/home'>HOME</Link></li>
-          <li>STORES</li>
-          <li>WHO WE ARE</li>     
+          <li>
+            <Link to='/home'> HOME </Link>
+          </li>
+          <li>
+            <Link to='/stores'>STORES</Link>
+          </li>
+          <li>
+            <Link to='/about'>ABOUT</Link>
+          </li>     
         </ul>
-        <button className='login-button'>
-          <Link to='/auth'>LOG IN</Link>
-        </button>
+        <Link to='/auth'>
+          <button className='login-button'>LOG IN</button>
+        </Link>
       </div>      
     </div>
   )
