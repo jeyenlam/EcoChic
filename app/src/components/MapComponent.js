@@ -5,11 +5,14 @@ import { Icon } from 'leaflet'
 import StoreWidget from '../components/StoreWidget.js'
 import MapStoreWidget from './MapStoreWidget.js'
 
-const MapComponent = () => {
+const MapComponent = ({userId}) => {
+
   //These value needed to be updated dynamically
   const [brandsLatLon, setBrandsLatLon] = useState([]);
   const [brands, setBrands] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currUser, setUser] = useState();
+
 
   const markerIcon = new Icon({
     // <a href="https://www.flaticon.com/free-icons/marker" title="marker icons">Marker icons created by kmg design - Flaticon</a>
@@ -21,6 +24,11 @@ const MapComponent = () => {
   const loadMarkers = async () => {
 
     try {
+      const responseUsers = await fetch('http://localhost:3030/Users/'+ userId);
+      const user = await responseUsers.json();
+      setUser(user);
+      console.log(user)
+
       const response = await fetch('http://localhost:3030/Brands');
       const brandsData = await response.json();
       setBrands(brandsData);
@@ -45,7 +53,7 @@ const MapComponent = () => {
   }
 
   return (
-      <MapContainer center={[25.807198059040545, -80.19083039580919]} zoom={13}>
+      <MapContainer center={[currUser.address.lat, currUser.address.lon]} zoom={13}>
           <TileLayer
               url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
           />
