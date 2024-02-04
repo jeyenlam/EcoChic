@@ -2,7 +2,9 @@ import Navbar from '../components/Navbar.js'
 import StoreWidget from '../components/StoreWidget.js'
 import React, { useEffect, useState} from 'react'
 
-const Stores = () => {
+const Store = () => {
+
+  //These value needed to be updated dynamically
 
   const [brands, setBrands] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -64,4 +66,4 @@ const Stores = () => {
 
 
 
-export default Stores
+export default Store

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const StoreWidget = ({storeLogo, storeName, storeDescription}) => {
   return (
@@ -7,6 +8,9 @@ const StoreWidget = ({storeLogo, storeName, storeDescription}) => {
       <div className='detail'>
         <h3> {storeName} </h3>
         <p>{storeDescription}</p>
+        <button className='map-store-more-info'>
+                <Link to={`/store`}>More Info</Link>
+        </button>
       </div>    
     </div>
   )

@@ -338,9 +338,49 @@ input{
 /* MAP (sizing) */
 
 .leaflet-container{
-  height: 50vh
+  height: 50vh;
+  align-items: center;
 }
 
 .homeMap{
   height: 50vh;
+  align-items: center;
+  margin: 4%;
 }
+
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+}
+
+.map-store-logo{
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.map-store-detail{
+  align-items: center;
+  justify-content: center;
+}
+
+.map-store-more-info{
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.map-store-widget{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+

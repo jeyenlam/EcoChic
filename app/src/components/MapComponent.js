@@ -1,10 +1,15 @@
 import React, { useEffect, useState} from 'react'
-import {MapContainer, TileLayer, Marker} from "react-leaflet"
+import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet"
 import "leaflet/dist/leaflet.css"
 import { Icon } from 'leaflet'
+import StoreWidget from '../components/StoreWidget.js'
+import MapStoreWidget from './MapStoreWidget.js'
 
 const MapComponent = () => {
-  const [brandsJSON, setBrandsJSON] = useState([]);
+  //These value needed to be updated dynamically
+  const [brandsLatLon, setBrandsLatLon] = useState([]);
+  const [brands, setBrands] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const markerIcon = new Icon({
     // <a href="https://www.flaticon.com/free-icons/marker" title="marker icons">Marker icons created by kmg design - Flaticon</a>
@@ -17,13 +22,15 @@ const MapComponent = () => {
 
     try {
       const response = await fetch('http://localhost:3030/Brands');
-      const brands = await response.json();
+      const brandsData = await response.json();
+      setBrands(brandsData);
 
-      const addresses = brands.map((brand) => [brand.address.lat, brand.address.lon]);
-      setBrandsJSON(addresses);
-      // console.log(brandsJSON);
+      const addresses = await brands.map((brand) => [brand.address.lat, brand.address.lon]);
+      setBrandsLatLon(addresses);
+      setLoading(false);
     } catch (error) {
       console.error('Error loading markers:', error);
+      setLoading(false);
     }
   }
 
@@ -31,17 +38,30 @@ const MapComponent = () => {
 
   useEffect(() => {
     loadMarkers()
-  }, [])
+  }, [loading])
 
+  if (loading) {
+    return <div>Loading...</div>; // You can replace this with a loading spinner or any loading indicator
+  }
 
   return (
-      <MapContainer center={[40.7128, -74.0060]} zoom={13}>
+      <MapContainer center={[25.807198059040545, -80.19083039580919]} zoom={13}>
           <TileLayer
               url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
           />
           {
-            brandsJSON.map((position, index) => (
+            brandsLatLon.map((position, index) => (
               <Marker key={index} position={position} icon={markerIcon}>
+                <Popup>
+                {brands && brands[index] ? (
+                    <MapStoreWidget
+                      storeLogo={brands[index]?.brandLogo}
+                      storeName={brands[index]?.brandName}
+                    />
+                  ) : (
+                    <span>Error : Data not available</span>
+                  )}
+                </Popup>
               </Marker>
             ))
           }

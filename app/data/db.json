@@ -1,28 +1,29 @@
 {
   "Brands": [
     {
-      "brandName": "temp brand name ",
-      "administratorName": "temp admin name",
-      "phoneNumber": 12345,
-      "email": "temp@gmail.com",
-      "background Paragraph": "temp body paragraph",
-      "brandLogo": "temp logo",
+      "brandName": "Boho Bliss Boutique",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 5551234567,
+      "email": "bbb@gmail.com",
+      "brandLogo": "https://media.cntraveler.com/photos/619682ab57ff29e3eed86cf0/16:9/w_2560,c_limit/Boho%20Hunter%20Wynwood_Photo%20Jul%2028,%205%2037%2043%20PM.jpg",
+      "shortDescription": "Boho Bliss Boutique offers a curated collection of bohemian-inspired fashion, blending free-spirited styles with sustainable practices.",
+      "longDescription": "Located in the heart of Miami, Boho Bliss Boutique sources eco-friendly fabrics for their unique, bohemian pieces. Embrace a carefree and conscious lifestyle with their handpicked selection.", 
       "address" : {
-        "lat": 49.24469,
-        "lon": -123.18125
+        "lat": 25.807198059040545, 
+        "lon": -80.19083039580919
       },
+      "hours": "Mon-Sat: 10 am - 7 pm",
       "tags": {
-        "country": "temp country",
-        "city": "temp city",
-        "provinceOrState": "temp state",
-        "region": "temp region",
+        "country": "United States of America",
+        "city": "Miami",
+        "provinceOrState": "Florida",
         "style": {
           "eclectic": false,
           "vintage": false,
           "y2k": false,
           "goth": false,
           "anime": false,
-          "hippie": false,
+          "hippie": true,
           "minimalist": false,
           "sporty": false,
           "preppy": false
@@ -30,71 +31,22 @@
       },
       "reviews": [
         {
-          "Profile Name": "temp profile name",
-          "Profile png": "temp profile pic",
-          "Comment": "temp comment",
-          "numStars": "temp number of stars"
+          "Profile Name": "John Doe",
+          "Profile png": "../pictures/pin.png",
+          "Comment": "I loved all of the options here!!",
+          "numStars": 3.5
         },
         {
-          "Profile Name": "temp profile name",
-          "Profile png": "temp profile pic",
-          "Comment": "temp comment",
-          "numStars": "temp number of stars"
+          "Profile Name": "Joanna Johnson",
+          "Profile png": "../pictures/pin.png",
+          "Comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
         },
         {
-          "Profile Name": "temp profile name",
-          "Profile png": "temp profile pic",
-          "Comment": "temp comment",
-          "numStars": "temp number of stars"
-        }
-      ]
-    },
-    {
-      "brandName": "temp brand name ",
-      "administratorName": "temp admin name",
-      "phoneNumber": 12345,
-      "email": "temp@gmail.com",
-      "background Paragraph": "temp body paragraph",
-      "brandLogo": "temp logo",
-      "address" : {
-        "lat": 40.7128, 
-        "lon": -74.0060
-      },
-      "tags": {
-        "country": "temp country",
-        "city": "temp city",
-        "provinceOrState": "temp state",
-        "region": "temp region",
-        "style": {
-          "eclectic": false,
-          "vintage": false,
-          "y2k": false,
-          "goth": false,
-          "anime": false,
-          "hippie": false,
-          "minimalist": false,
-          "sporty": false,
-          "preppy": false
-        }
-      },
-      "reviews": [
-        {
-          "Profile Name": "temp profile name",
-          "Profile png": "temp profile pic",
-          "Comment": "temp comment",
-          "numStars": "temp number of stars"
-        },
-        {
-          "Profile Name": "temp profile name",
-          "Profile png": "temp profile pic",
-          "Comment": "temp comment",
-          "numStars": "temp number of stars"
-        },
-        {
-          "Profile Name": "temp profile name",
-          "Profile png": "temp profile pic",
-          "Comment": "temp comment",
-          "numStars": "temp number of stars"
+          "Profile Name": "Victor James",
+          "Profile png": "../pictures/pin.png",
+          "Comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
         }
       ]
     }
