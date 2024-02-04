@@ -1,13 +1,36 @@
-import React from 'react'
 import Navbar from '../components/Navbar.js'
 import StoreWidget from '../components/StoreWidget.js'
+import React, { useEffect, useState} from 'react'
 
 const Stores = () => {
 
-  //These value needed to be updated dynamically
-  const storeLogo = 'https://greenthatlife.com/wp-content/uploads/2021/06/Image-6-8-21-at-3.51-PM.jpeg'
-  const storeName = 'Store Name'
-  const storeDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  const [brands, setBrands] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // load all of the coordinates of all the brands from the JSON server 
+  const loadStores = async () => {
+
+    try {
+      const response = await fetch('http://localhost:3030/Brands');
+      const brandsData = await response.json();
+      setBrands(brandsData);
+      setLoading(false);
+      console.log(brandsData);
+    } catch (error) {
+      console.error('Error loading markers:', error);
+      setLoading(false);
+    }
+  }
+
+ 
+
+  useEffect(() => {
+    loadStores()
+  }, [loading])
+
+  if (loading) {
+    return <div>Loading...</div>; // You can replace this with a loading spinner or any loading indicator
+  }
 
 
   //We also need the number of stores registered with us
@@ -23,21 +46,16 @@ const Stores = () => {
         </div>
         
         <div className='stores-level2'>
-          <StoreWidget
-            storeLogo={storeLogo}
-            storeName={storeName}
-            storeDescription={storeDescription}
-          />
-          <StoreWidget
-            storeLogo={storeLogo}
-            storeName={storeName}
-            storeDescription={storeDescription}
-          />
-          <StoreWidget
-            storeLogo={storeLogo}
-            storeName={storeName}
-            storeDescription={storeDescription}
-          />
+          {
+            brands.map((brand, index) => (
+              <StoreWidget
+                storeLogo={brand.brandLogo}
+                storeName={brand.brandName}
+                storeDescription={brand.shortDescription}
+                brand={brand}
+              />
+            ))
+          }
         </div>
         
       </div>

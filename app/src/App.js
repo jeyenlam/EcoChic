@@ -1,12 +1,13 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-import Home from './pages/Home';
-import Auth from './pages/Auth';
-import Stores from './pages/Stores';
-import About from './pages/About';
-import Intro from './pages/Intro';
-import SignUpForm from './components/SignUpForm'
+import Home from './pages/Home.js';
+import Auth from './pages/Auth.js';
+import Stores from './pages/Stores.js';
+import About from './pages/About.js';
+import Intro from './pages/Intro.js';
+import SignUpForm from './components/SignUpForm.js';
+import Store from './pages/Store.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/home' element={ <Home/> } />
         <Route path='/auth' element={ <Auth/> } />
         <Route path='/stores' element={ <Stores/> } />
+        <Route path='/stores/:id' element={ <Store/> } />
         <Route path='/about' element={ <About/> } />
         <Route path='/signUp' element={ <SignUpForm/> } />
       </Routes>
