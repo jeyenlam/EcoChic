@@ -9,7 +9,7 @@
       "brandLogo": "temp logo",
       "address" : {
         "lat": 49.24469,
-        "lot": -123.18125
+        "lon": -123.18125
       },
       "tags": {
         "country": "temp country",
@@ -57,8 +57,8 @@
       "background Paragraph": "temp body paragraph",
       "brandLogo": "temp logo",
       "address" : {
-        "lat": 40.69263,
-        "lot": -73.97589
+        "lat": 40.7128, 
+        "lon": -74.0060
       },
       "tags": {
         "country": "temp country",
