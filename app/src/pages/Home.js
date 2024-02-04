@@ -22,7 +22,8 @@ const Home = () => {
       <div className='home-page'>
         <img className='home-level1' src={graphic}></img>
         <div className='homeMap'>
-          <MapComponent />
+          <h1 className='explore-map'> <b>Explore the map to find a business near you!</b></h1> 
+          <MapComponent /> 
         </div>
         <div className='page-content'>
           <h2>STORES OF THE MONTH</h2>       

@@ -249,6 +249,11 @@ input{
 
 /* ------ STORES PAGE ------*/
 
+.explore-map{
+  margin:15px;
+  color: #375b32;
+}
+
 /* store list & search bar */
 .stores-level1{
   display: flex;
@@ -338,13 +343,14 @@ input{
 /* MAP (sizing) */
 
 .leaflet-container{
-  height: 50vh;
-  align-items: center;
+  height: 70vh;
+  align-items: right;
+  border-radius: 1rem;
 }
 
 .homeMap{
-  height: 50vh;
-  align-items: center;
+  height: 60vh;
+  align-items: right;
   margin: 4%;
 }
 
@@ -369,7 +375,7 @@ input{
 .map-store-more-info{
   align-items: center;
   justify-content: center;
-  
+
 }
 
 
@@ -384,3 +390,77 @@ input{
 }
 
 
+/* Individual Store Page */
+.store-page-img{
+  height: 50vh;
+  width: 80%;
+  background-size: contain;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 3%;
+}
+
+.store-page-outer{
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.store-page-content{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.style{
+  background-color: #c1e0bd;
+  height: fit-content;
+  width: fit-content;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.store-page-details{
+  display: grid;
+  grid-template-columns: 100px, 100px;
+}
+
+.store-page-pfp{
+  width: 50px;
+}
+
+.store-page-reviews{
+  display: grid;
+  grid-template-rows: max-content;
+  padding: 20px;
+  border-spacing: 15px;
+  width: 85%;
+}
+
+.profile-and-rating{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.profile-rating-pfp{
+  display: grid;
+  grid-template-columns: 10% 50%;
+  padding: 2px;
+}
+
+.store-page-review{
+  margin: 7px;
+  padding:5%;
+  border-style: solid;
+  border-spacing: 15px;
+}
+
+.store-page-description{
+  margin-top: 10px;
+  font-weight: 100;
+}

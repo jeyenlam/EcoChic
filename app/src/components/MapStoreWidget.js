@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const MapStoreWidget = ({storeLogo, storeName, storeDescription}) => {
+const MapStoreWidget = ({storeLogo, storeName, storeDescription, brand}) => {
 
     return (
         <div className='map-store-widget'>
@@ -12,7 +12,7 @@ const MapStoreWidget = ({storeLogo, storeName, storeDescription}) => {
             <h3> {storeName} </h3>
             <p>{storeDescription}</p>
             <button className='map-store-more-info'>
-                <Link to={`/stores`}>More Info</Link>
+                <Link to={`/stores/`+ brand.id}>More Info</Link>
             </button>
         </div>    
         </div>

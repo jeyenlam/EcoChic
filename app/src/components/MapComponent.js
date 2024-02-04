@@ -57,6 +57,7 @@ const MapComponent = () => {
                     <MapStoreWidget
                       storeLogo={brands[index]?.brandLogo}
                       storeName={brands[index]?.brandName}
+                      brand={brands[index]}
                     />
                   ) : (
                     <span>Error : Data not available</span>

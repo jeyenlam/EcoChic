@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,  useNavigate } from 'react-router-dom'
 import Home from '../pages/Home.js';
 
 function LogInForm () {
   const [loginSuccessful, setLoginSuccessful] = useState(false)
+  const navigate = useNavigate();
 
   const logIn =  async (e) => {
     e.preventDefault();
@@ -24,7 +25,8 @@ function LogInForm () {
     })
 
     if (userExists == true) {
-      setLoginSuccessful(!loginSuccessful)
+      setLoginSuccessful(true)
+      navigate('/home')
     }
 
     // TODO : once JSON server is working, add something here that queries 
@@ -35,9 +37,6 @@ function LogInForm () {
 
 
   return (
-    loginSuccessful? 
-
-    <Link to={`/Home`}> </Link> :
 
     <div className='logInForm'>
       <div>

@@ -52,6 +52,7 @@ const Stores = () => {
                 storeLogo={brand.brandLogo}
                 storeName={brand.brandName}
                 storeDescription={brand.shortDescription}
+                brand={brand}
               />
             ))
           }
