@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='navbar'>
       <h1>
         <span className='green'>Eco</span>
-        <span className='light-green'>Chic</span>
+        <span className='purple'>Chic</span>
         </h1>
       <div className='navbar-options'>
         <ul>

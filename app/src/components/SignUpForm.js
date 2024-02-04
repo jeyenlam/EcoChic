@@ -5,7 +5,7 @@ function SignUpForm () {
 
     // TODO: 
     // [ X ] persist this data to a JSON server 
-    // [   ] query and API endpoint to get the (lat,lon) coordinates of a 
+    // [ X ] query and API endpoint to get the (lat,lon) coordinates of a 
     //      person's address and store that instead of a string address 
     // [ X ] integrate this component into the login form page 
     // [   ] if there is time, allow a user to add a profile pic to a user's profile 
@@ -20,11 +20,61 @@ function SignUpForm () {
   const sportyRef = useRef(null)
   const preppyRef = useRef(null)
 
-  const SignUp = (e) => {
+  const API_Key = '';
+
+  const SignUp = async (e) => {
     e.preventDefault();
 
     const rawFormData = new FormData(e.target)
     const formData = Object.fromEntries(rawFormData)
+    var lat = 0
+    var lon = 0
+
+    const fetchLatLon = async () => {
+      const address = formData.address;
+      console.log(address)
+      let baseUrl = 'https://google-maps-geocoding.p.rapidapi.com/geocode/json?address='
+      const tokens = address.split(' ');
+
+      tokens.map((token, index) => {
+        console.log(token)
+        if (index === 0){
+          baseUrl += token;
+        }
+        else if (index === tokens.length - 1){
+          baseUrl += '&language=en'
+        }
+        else{
+          baseUrl += `%20${token}`
+        }
+      })
+
+      const url = baseUrl;
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': API_Key,
+          'X-RapidAPI-Host': 'google-maps-geocoding.p.rapidapi.com',
+        },
+      };
+    
+      try {
+        const response = await fetch(url, options);
+        if (response.ok) {
+          const result = await response.json();
+
+          lat = (result['results'][0]['geometry']['location']['lat'])
+          lon = (result['results'][0]['geometry']['location']['lng'])
+
+        } else {
+          console.error(`Error: ${response.statusText}`);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    await fetchLatLon();
 
     const user = {
       username : formData.username, 
@@ -33,7 +83,10 @@ function SignUpForm () {
       password : formData.password, 
       phoneNumber : formData.phoneNumber, 
       email : formData.email, 
-      address : formData.address,
+      address : {
+        lat: lat,
+        lon: lon
+      },
       style : {
         eclectic: eclecticRef.current.checked, 
         vintage: vintageRef.current.checked, 
@@ -47,11 +100,12 @@ function SignUpForm () {
       }
     }
 
+
     fetch('http://localhost:3030/Users', {
       method: 'POST',
       body: JSON.stringify(user)
     })
-    // console.log(user)
+    console.log(user)
   }
 
 

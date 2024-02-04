@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar.js'
+import Navbar from '../components/Navbar'
 import graphic from '../pictures/SUSTAINABLE_THROUGH_QUALITY.png'
 import StoreWidget from '../components/StoreWidget.js'
 import Map from '../components/MapComponent.js'

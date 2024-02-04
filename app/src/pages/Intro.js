@@ -24,19 +24,21 @@ const Intro = () => {
     }
   }, [spans]);
 
-  const handleOnScroll = () => {
+  const handleOnClick = () => {
     const letters = document.querySelector('.letters');
-    const languageBox = document.querySelector('.language-box');
+    const welcomeBox = document.querySelector('.welcome-box');
 
     letters.classList.add('fade-out');
-    letters.remove();
+    // letters.remove();
 
-    languageBox.style.display = 'block';
+    welcomeBox.style.display = 'flex';
+    welcomeBox.classList.add('.fade-in');
   }
 
   return (
     <div className='intro-animation'>
-      <div className='letters' onClick={handleOnScroll}>
+
+      <div className='letters' onClick={handleOnClick}>
         <span>E</span>
         <span>C</span>
         <span>O</span>
@@ -93,15 +95,22 @@ const Intro = () => {
         <span>I</span>
         <span>C</span>
       </div>
-      <div className='language-box'>
-          <select id="languages" defaultValue='' onChange={() => navigate('/home')} >
+
+      <div className='welcome-box'>
+        <h1>WELCOME 
+          <span className='blue'> TO </span>
+          <span className='green'>ECO</span>
+          <span className='purple'>CHIC</span>
+        </h1>
+        <select id="languages" defaultValue='' onChange={() => navigate('/auth')} >
           <option value="" disabled>Select a language</option>
-            <option value="english">ENGLISH</option>
-            <option value="espanol">ESPANOL</option>
-            <option value="mandarin">MANDARIN</option>
-            <option value="french">FRENCH</option>
-          </select>
+          <option value="english">ENGLISH 🇺🇸</option>
+          <option value="espanol">ESPANOL 🇪🇸</option>
+          <option value="mandarin">MANDARIN 🇨🇳</option>
+          <option value="french">FRENCH 🇫🇷</option>
+        </select>
       </div>
+
     </div>
   )
 }
