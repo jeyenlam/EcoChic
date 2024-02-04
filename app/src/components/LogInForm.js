@@ -6,6 +6,7 @@ import Home from '../pages/Home.js';
 function LogInForm () {
   const [loginSuccessful, setLoginSuccessful] = useState(false)
   const navigate = useNavigate();
+  var userMatch;
 
   const logIn =  async (e) => {
     e.preventDefault();
@@ -21,13 +22,14 @@ function LogInForm () {
       // console.log("user.username == formData.username" , user.username == formData.username);
       // console.log("user.password == formData.password", user.password == formData.password);
       if((user.username == formData.username) && (user.password == formData.password)) {
+        userMatch = user
         userExists = true
       }
     })
 
     if (userExists == true) {
-      setLoginSuccessful(true)
-      navigate('/home')
+      setLoginSuccessful(true);
+      navigate('/home/' + userMatch.id);
     }
 
     // TODO : once JSON server is working, add something here that queries 

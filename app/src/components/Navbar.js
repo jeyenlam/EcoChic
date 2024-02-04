@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({userId}) => {
   return (
     <div className='navbar'>
       <h1>
@@ -11,13 +11,13 @@ const Navbar = () => {
       <div className='navbar-options'>
         <ul>
           <li>
-            <Link to='/home'> HOME </Link>
+            <Link to={'/home/' + userId} > HOME </Link>
           </li>
           <li>
-            <Link to='/stores'>STORES</Link>
+            <Link to={'/stores/' + userId}>STORES</Link>
           </li>
           <li>
-            <Link to='/about'>ABOUT</Link>
+            <Link to={'/about/' + userId}>ABOUT</Link>
           </li>     
         </ul>
         <Link to='/auth'>
