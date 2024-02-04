@@ -142,7 +142,6 @@ function SignUpForm () {
           <input type='text' id='address' name='address'placeholder='Address' />
         </div>
         
-        
         <div className='sub-form'>
           
           <label className='purple' htmlFor='style'>What type of style do you gravitate towards?</label>

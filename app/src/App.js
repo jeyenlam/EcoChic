@@ -8,6 +8,7 @@ import About from './pages/About.js';
 import Intro from './pages/Intro.js';
 import SignUpForm from './components/SignUpForm.js';
 import Store from './pages/Store';
+import Articles from './pages/Articles.js';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <Route path='/stores' element={ <Stores/> } />
         <Route path='/stores/:id' element={ <Store/> } />
         <Route path='/about' element={ <About/> } />
+        <Route path='/articles/1' element={ <Articles id={1}/> } />
+        <Route path='/articles/2' element={ <Articles id={2}/> } />
+        <Route path='/articles/3' element={ <Articles id={3}/> } />
       </Routes>
     </BrowserRouter>
   );

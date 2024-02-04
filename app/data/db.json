@@ -1,16 +1,16 @@
 {
   "Brands": [
     {
-      "id": 1,
+      "id": "1cf1",
       "brandName": "Boho Bliss Boutique",
       "administratorName": "Sarah Adams",
       "phoneNumber": 5551234567,
       "email": "bbb@gmail.com",
       "brandLogo": "https://media.cntraveler.com/photos/619682ab57ff29e3eed86cf0/16:9/w_2560,c_limit/Boho%20Hunter%20Wynwood_Photo%20Jul%2028,%205%2037%2043%20PM.jpg",
       "shortDescription": "Embrace urban sophistication with Urban Elegance Collective, where contemporary styles meet sustainable choices.",
-      "longDescription": "Based in Orlando, Urban Elegance Collective crafts modern fashion with an eco-conscious mindset. Discover a fusion of city chic and sustainability in every garment.", 
-      "address" : {
-        "lat": 25.807198059040545, 
+      "longDescription": "Based in Orlando, Urban Elegance Collective crafts modern fashion with an eco-conscious mindset. Discover a fusion of city chic and sustainability in every garment.",
+      "address": {
+        "lat": 25.807198059040545,
         "lon": -80.19083039580919
       },
       "stringAddress": "123 Ocean Ave, Miami, FL 33101",
@@ -40,7 +40,7 @@
         },
         {
           "profileName": "Joanna Johnson",
-          "profilePng":"https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
           "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
           "numStars": 4
         },
@@ -50,21 +50,20 @@
           "comment": "I had so much fun trying on cool and unique pieces!",
           "numStars": 5
         }
-      ],
-      "id": "1cf1"
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "brandName": "Urban Elegance Collective",
       "administratorName": "Sarah Adams",
       "phoneNumber": 5559876543,
       "email": "uec@gmail.com",
       "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
       "shortDescription": "Boho Bliss Boutique offers a curated collection of bohemian-inspired fashion, blending free-spirited styles with sustainable practices.",
-      "longDescription": "Located in the heart of Miami, Boho Bliss Boutique sources eco-friendly fabrics for their unique, bohemian pieces. Embrace a carefree and conscious lifestyle with their handpicked selection.", 
-      "address" : {
-        "lat": 28.541045200085275, 
-        "lon": -81.3810165414723 
+      "longDescription": "Located in the heart of Miami, Boho Bliss Boutique sources eco-friendly fabrics for their unique, bohemian pieces. Embrace a carefree and conscious lifestyle with their handpicked selection.",
+      "address": {
+        "lat": 28.541045200085275,
+        "lon": -81.3810165414723
       },
       "stringAddress": "456 City Blvd, Orlando, FL 32801",
       "hours": "Tue-Sun: 11 am - 8 pm",
@@ -93,7 +92,7 @@
         },
         {
           "profileName": "Joanna Johnson",
-          "profilePng":"https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
           "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
           "numStars": 4
         },
@@ -106,16 +105,16 @@
       ]
     },
     {
-      "id": 3,
+      "id": "f498",
       "brandName": "Sunshine Vintage Emporium",
       "administratorName": "Sarah Adams",
       "phoneNumber": 5552345678,
       "email": "sve@gmail.com",
       "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
       "shortDescription": "Sunshine Vintage Emporium brings the charm of the past to present fashion, offering a carefully curated selection of timeless pieces.",
-      "longDescription": "Nestled in Tampa Bay, Sunshine Vintage Emporium is a haven for vintage enthusiasts. Explore their collection of pre-loved treasures that tell stories of eras gone by.", 
-      "address" : {
-        "lat": 27.931239421361873,  
+      "longDescription": "Nestled in Tampa Bay, Sunshine Vintage Emporium is a haven for vintage enthusiasts. Explore their collection of pre-loved treasures that tell stories of eras gone by.",
+      "address": {
+        "lat": 27.931239421361873,
         "lon": -82.48977306159225
       },
       "stringAddress": " 789 Sunset St, Tampa, FL 33602",
@@ -145,7 +144,7 @@
         },
         {
           "profileName": "Joanna Johnson",
-          "profilePng":"https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
           "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
           "numStars": 4
         },
@@ -155,8 +154,7 @@
           "comment": "I had so much fun trying on cool and unique pieces!",
           "numStars": 5
         }
-      ],
-      "id": "f498"
+      ]
     }
   ],
   "Users": [
@@ -867,6 +865,30 @@
       "address": {
         "lat": 42.845719,
         "lon": -85.636217
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "197b",
+      "username": "",
+      "firstName": "",
+      "lastName": "",
+      "password": "",
+      "phoneNumber": "",
+      "email": "",
+      "address": {
+        "lat": 0,
+        "lon": 0
       },
       "style": {
         "eclectic": false,

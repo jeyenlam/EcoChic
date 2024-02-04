@@ -228,7 +228,6 @@ span {
   background-color: var(--blue);
 }
 
-
 /* ------ AUTHENTICATION PAGES ------*/
 .auth-page{
   width: 100%;
@@ -237,8 +236,6 @@ span {
   align-items: center;
   height: 100vh;
 }
-
-
 
 /* ------ INTRO PAGE ------*/
 
@@ -290,7 +287,7 @@ span {
 
 .fade-out {
   opacity: 0;
-  transition: opacity 4s ease-out;
+  transition: opacity 2s ease-out;
 }
 
 .welcome-box {
@@ -299,7 +296,6 @@ span {
   flex-direction: column;
   width: 200px;
   height: 100px;
-  background-color: #c1e0bd;
   margin-bottom: 2rem;
   justify-content: space-around;
   align-items: center;
@@ -314,7 +310,7 @@ span {
 
 .about-level1 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
@@ -330,13 +326,13 @@ span {
   height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
   align-items: center;
   place-items: center;
   width: 100%;
 }
 
 .article-widget{
-  background-color: #4c2c72;
   width:300px;
   height:300px;
   display: flex;
@@ -351,6 +347,10 @@ span {
   background-size: cover;
   border-radius: 2rem;
   margin-bottom: 1rem;
+}
+
+.article-info h3:hover{
+  cursor: pointer;
 }
 
 .about-level2,
@@ -374,8 +374,41 @@ span {
 }
 
 .profile-card {
+  padding: 2rem;
   justify-content: center;
   text-align: center;
+}
+.profile-card h2{
+  margin-top: 1rem;
+}
+
+/* ------ ARTICLE PAGE ------*/
+.article{
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  /* background-color: #c1e0bd; */
+}
+
+.article .info{
+  width: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.article h1, .article .info{
+  padding-bottom: 1rem;
+}
+
+.article ol{
+  padding: 1rem;
+}
+
+.article ol li{
+  margin-top: 1rem;
+
 }
 
 /* ------ STORES PAGE ------*/
@@ -431,43 +464,6 @@ span {
 .home-level1 {
   width: 100%;
   background-size: contain;
-  
-}
-
-/* SIGN UP FORM */
-
-.signUpForm{
-  background-color: #D5DCDC;
-  border-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.signUpForm form{
-  height: 30%;
-  /* background-color: rebeccapurple; */
-  padding: 0 1rem;
-}
-
-.label-div, .input-div{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  caret-color: transparent;
-  /* background-color: #B87F45; */
-}
-
-.signUpForm form div input{
-  width: 80%;
-  height: 3rem;
-  border-radius: 2rem;
-  padding: 1rem;
-  margin-left: 1rem;
-  border: none;
-  align-items: center;
-  outline: none;
 }
 
 /* MAP (sizing) */
@@ -505,7 +501,6 @@ span {
 .map-store-more-info{
   align-items: center;
   justify-content: center;
-
 }
 
 
@@ -518,7 +513,6 @@ span {
   align-items: center;
   border-radius: 2rem;
 }
-
 
 /* Individual Store Page */
 .store-page-img{
