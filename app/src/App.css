@@ -296,6 +296,8 @@ input{
 .home-level1{
   width: 100%;
   background-size: contain;
+}
+
 /* SIGN UP FORM */
 
 .signUpForm{
@@ -331,4 +333,14 @@ input{
   border: none;
   align-items: center;
   outline: none;
+}
+
+/* MAP (sizing) */
+
+.leaflet-container{
+  height: 50vh
+}
+
+.homeMap{
+  height: 50vh;
 }

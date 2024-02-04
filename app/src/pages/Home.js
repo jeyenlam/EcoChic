@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../components/Navbar.js'
 import graphic from '../pictures/SUSTAINABLE_THROUGH_QUALITY.png'
 import StoreWidget from '../components/StoreWidget.js'
+import Map from '../components/MapComponent.js'
+import MapComponent from '../components/MapComponent.js'
 
 const Home = () => {
 
@@ -16,8 +18,12 @@ const Home = () => {
 
       <Navbar/>
 
+
       <div className='home-page'>
         <img className='home-level1' src={graphic}></img>
+        <div className='homeMap'>
+          <MapComponent />
+        </div>
         <div className='page-content'>
           <h2>STORES OF THE MONTH</h2>       
           <div className='home-level2'>

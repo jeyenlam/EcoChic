@@ -7,6 +7,10 @@
       "email": "temp@gmail.com",
       "background Paragraph": "temp body paragraph",
       "brandLogo": "temp logo",
+      "address" : {
+        "lat": 49.24469,
+        "lot": -123.18125
+      },
       "tags": {
         "country": "temp country",
         "city": "temp city",
@@ -52,6 +56,10 @@
       "email": "temp@gmail.com",
       "background Paragraph": "temp body paragraph",
       "brandLogo": "temp logo",
+      "address" : {
+        "lat": 40.69263,
+        "lot": -73.97589
+      },
       "tags": {
         "country": "temp country",
         "city": "temp city",

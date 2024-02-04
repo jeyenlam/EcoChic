@@ -15,9 +15,9 @@ function LogInForm () {
     var userExists = false;
 
     users.forEach( (user) => {
-      console.log(user);
-      console.log("user.username == formData.username" , user.username == formData.username);
-      console.log("user.password == formData.password", user.password == formData.password);
+      // console.log(user);
+      // console.log("user.username == formData.username" , user.username == formData.username);
+      // console.log("user.password == formData.password", user.password == formData.password);
       if((user.username == formData.username) && (user.password == formData.password)) {
         userExists = true
       }
