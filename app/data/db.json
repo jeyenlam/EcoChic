@@ -43,7 +43,8 @@
           "Comment": "temp comment",
           "numStars": "temp number of stars"
         }
-      ]
+      ],
+      "id": "1cf1"
     },
     {
       "brandName": "temp brand name ",
@@ -88,7 +89,8 @@
           "Comment": "temp comment",
           "numStars": "temp number of stars"
         }
-      ]
+      ],
+      "id": "f498"
     }
   ],
   "Users": [
@@ -110,7 +112,8 @@
         "minimalist": false,
         "sporty": false,
         "preppy": false
-      }
+      },
+      "id": "769e"
     },
     {
       "id": "b82a",
@@ -131,6 +134,564 @@
         "minimalist": false,
         "sporty": false,
         "preppy": true
+      }
+    },
+    {
+      "id": "dc8d",
+      "username": "lamy",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "123",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": true,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "25d3",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "64d7",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "8b16",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "ebbc",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "4220",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "d363",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "2883",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "9207",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "388d",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "cb33",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "baab",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "818b",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr. SE Grand Rapids MI",
+      "style": {
+        "eclectic": true,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "87cf",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "5e71",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "6c07",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "e30c",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "ca81",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "1ec4",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "6871",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "1daf",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 0,
+        "lng": 0
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "d618",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "fd2c",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": "6549 Creekside View Dr SE",
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "16e9",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 0,
+        "lon": 0
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "dc80",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 0,
+        "lon": 0
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "12d5",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 42.845719,
+        "lon": -85.636217
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
       }
     }
   ]
