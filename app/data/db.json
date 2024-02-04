@@ -759,6 +759,126 @@
         "sporty": false,
         "preppy": false
       }
+    },
+    {
+      "id": "98f8",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 0,
+        "lon": 0
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": true,
+        "preppy": true
+      }
+    },
+    {
+      "id": "9a01",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 0,
+        "lon": 0
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": true
+      }
+    },
+    {
+      "id": "9abe",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 0,
+        "lon": 0
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": true
+      }
+    },
+    {
+      "id": "2c45",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 42.845719,
+        "lon": -85.636217
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
+    },
+    {
+      "id": "8aa6",
+      "username": "",
+      "firstName": "Yen",
+      "lastName": "Lam",
+      "password": "",
+      "phoneNumber": "6168566620",
+      "email": "jeyenlam@gmail.com",
+      "address": {
+        "lat": 42.845719,
+        "lon": -85.636217
+      },
+      "style": {
+        "eclectic": false,
+        "vintage": false,
+        "y2k": false,
+        "goth": false,
+        "anime": false,
+        "hippie": false,
+        "minimalist": false,
+        "sporty": false,
+        "preppy": false
+      }
     }
   ]
 }

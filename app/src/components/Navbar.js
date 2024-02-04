@@ -21,7 +21,7 @@ const Navbar = () => {
           </li>     
         </ul>
         <Link to='/auth'>
-          <button className='login-button'>LOG IN</button>
+          <button className='login-button'>LOG OUT</button>
         </Link>
       </div>      
     </div>

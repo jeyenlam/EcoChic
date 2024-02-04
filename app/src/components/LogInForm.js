@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link,  useNavigate } from 'react-router-dom'
 import Home from '../pages/Home.js';
 
+
 function LogInForm () {
   const [loginSuccessful, setLoginSuccessful] = useState(false)
   const navigate = useNavigate();
@@ -38,24 +39,37 @@ function LogInForm () {
 
   return (
 
-    <div className='logInForm'>
-      <div>
-        <h1>Log In</h1>
-        <p> Don't have an account?  <Link to={`/signUp`}> Sign Up Here </Link></p>
-      <div>
-      <form id='logInForm' onSubmit={logIn}>
-        <div className='label-div'>
-        </div>
-        <div className='input-div'>
-          <label htmlFor='username'>Username</label>
-          <input type='text' id='username' name='username'placeholder='Username' />
-
-          <label htmlFor='password'>Password</label>
-          <input type='password' id='password' name='password' placeholder='Password'/>
-        </div> 
-        <button type='submit' id='logInButton'>Log In</button>       
-      </form>
+    <div className="logInForm">
+      <div className="form-header">
+        <h1 className="purple">Log In</h1>
       </div>
+
+      <form id="logInForm" onSubmit={logIn}>
+          <div className="form-category">
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+            />
+          </div>
+          <div className="form-category">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div> 
+          <div className="logInButtonDiv">
+            <button type="submit" id="logInButton">Log In</button>
+          </div>
+      </form>
+      <div className="form-footer">
+        <p> Don't have an account? </p>
+        <p><Link to={'/auth/signup'}> Sign Up Here </Link></p>
       </div>
     </div>
   )

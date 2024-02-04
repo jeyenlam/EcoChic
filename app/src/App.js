@@ -7,7 +7,7 @@ import Stores from './pages/Stores.js';
 import About from './pages/About.js';
 import Intro from './pages/Intro.js';
 import SignUpForm from './components/SignUpForm.js';
-import Store from './pages/Store.js';
+import Store from './pages/Store';
 
 function App() {
   return (
@@ -15,11 +15,11 @@ function App() {
       <Routes>
         <Route index element={ <Intro/> } />
         <Route path='/home' element={ <Home/> } />
-        <Route path='/auth' element={ <Auth/> } />
+        <Route path='/auth/' element={ <Auth authType='login'/> } />
+        <Route path='/auth/signup' element={ <Auth authType='signup'/> } />
         <Route path='/stores' element={ <Stores/> } />
         <Route path='/stores/:id' element={ <Store/> } />
         <Route path='/about' element={ <About/> } />
-        <Route path='/signUp' element={ <SignUpForm/> } />
       </Routes>
     </BrowserRouter>
   );
