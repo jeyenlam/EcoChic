@@ -8,14 +8,15 @@ import lavanyaProfile from '../pictures/lavanya-profile.JPG'
 import artImg1 from '../pictures/article1.jpeg'
 import artImg2 from '../pictures/article2.jpeg'
 import artImg3 from '../pictures/article3.jpeg'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 
 const About = () => {
+  const param = useParams().userId;
 
   return (
     <div>
       
-      <Navbar/>
+      <Navbar userId={param}/>
       
       <div className='about-page page-content'>
         <div className='about-level1'>

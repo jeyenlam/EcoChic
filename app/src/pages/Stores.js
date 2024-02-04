@@ -1,11 +1,14 @@
 import Navbar from '../components/Navbar.js'
 import StoreWidget from '../components/StoreWidget.js'
 import React, { useEffect, useState} from 'react'
+import { useParams } from 'react-router-dom'
+
 
 const Stores = () => {
 
   const [brands, setBrands] = useState([]);
   const [loading, setLoading] = useState(true);
+  const param = useParams().userId;
 
   // load all of the coordinates of all the brands from the JSON server 
   const loadStores = async () => {
@@ -38,7 +41,7 @@ const Stores = () => {
 
   return (
     <div>
-      <Navbar/>     
+      <Navbar userId={param}/>     
       <div className='stores-page page-content'>
         <div className='stores-level1'>
           <h2>STORES LIST</h2>

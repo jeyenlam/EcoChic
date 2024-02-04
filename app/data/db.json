@@ -129,7 +129,527 @@
           "y2k": false,
           "goth": false,
           "anime": false,
+          "hippie": false,
+          "minimalist": false,
+          "sporty": false,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "brandName": "Northern Threads Co.",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 5553456789,
+      "email": "ntc@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "Northern Threads Co. epitomizes Michigan's rugged charm with a collection of outdoor-inspired clothing for the modern adventurer.",
+      "longDescription": "Located in Detroit, Northern Threads Co. blends urban style with outdoor functionality. Discover their unique fusion of streetwear and wilderness-ready fashion.",
+      "address": {
+        "lat": 42.352990829530846,
+        "lon": -83.06758360707069
+      },
+      "stringAddress": "567 Forest Ave, Detroit, MI 48201",
+      "hours": "Mon-Fri: 9 am - 5 pm",
+      "tags": {
+        "country": "United States of America",
+        "city": "Detroit",
+        "provinceOrState": "Michigan",
+        "style": {
+          "eclectic": true,
+          "vintage": false,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": false,
+          "sporty": true,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "brandName": "Motor City Denim",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 5558765432,
+      "email": "mcd@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "Motor City Denim embodies the spirit of Detroit with their handcrafted denim creations, combining quality craftsmanship with a touch of rebellion.",
+      "longDescription": "Crafted in the heart of Detroit, Motor City Denim celebrates the city's resilience through artisanal denim. Each piece is a testament to timeless style and local pride.",
+      "address": {
+        "lat": 42.49716166010604,
+        "lon": -83.14469760521675
+      },
+      "stringAddress": "890 Main St, Detroit, MI 48202",
+      "hours": "Tue-Sat: 11 am - 7 pm",
+      "tags": {
+        "country": "United States of America",
+        "city": "Detroit",
+        "provinceOrState": "Michigan",
+        "style": {
+          "eclectic": false,
+          "vintage": true,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": true,
+          "sporty": false,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "brandName": "Lakeside Luxe Collective",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 5556789012,
+      "email": "llc@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "Lakeside Luxe Collective, situated in Grand Rapids, brings a touch of luxury to casual wear, fusing comfort and elegance for the modern Michigander.",
+      "longDescription": "Offering a unique blend of comfort and sophistication, Lakeside Luxe Collective introduces a curated selection of casual elegance. Elevate your everyday style in the heart of Grand Rapids.",
+      "address": {
+        "lat": 42.88711962726509,
+        "lon": -85.59779738985755
+      },
+      "stringAddress": "345 Harbor Dr, Grand Rapids, MI 49503",
+      "hours": "Wed-Sun: 10 am - 6 pm",
+      "tags": {
+        "country": "United States of America",
+        "city": "Grand Rapids",
+        "provinceOrState": "Michigan",
+        "style": {
+          "eclectic": false,
+          "vintage": false,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": true,
+          "sporty": false,
+          "preppy": true
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "brandName": "Parisian Chic Boutique",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 33123456789,
+      "email": "pcb@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "Parisian Chic Boutique embodies the timeless elegance of Paris with a collection that effortlessly blends classic French style with contemporary flair.",
+      "longDescription": "Nestled in the heart of Paris, Parisian Chic Boutique offers a curated selection of sophisticated fashion. From iconic staples to modern trends, embrace the allure of Parisian elegance.",
+      "address": {
+        "lat": 48.868455957430406,
+        "lon": 2.348943198143986
+      },
+      "stringAddress": "12 Rue de la Mode, Paris 75001",
+      "hours": "Mon-Sun: 10 am - 8 pm",
+      "tags": {
+        "country": "France",
+        "city": "Paris",
+        "provinceOrState": "",
+        "style": {
+          "eclectic": true,
+          "vintage": false,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": true,
+          "sporty": false,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "brandName": "Montmartre Mystique",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 33134567890,
+      "email": "mm@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "Montmartre Mystique, located in the artistic heart of Paris, invites you to explore a world of enchanting fashion, where every piece tells a story.",
+      "longDescription": "Immerse yourself in the magic of Montmartre Mystique. Located in the vibrant Montmartre district, this boutique unveils a collection that fuses artistic expression with contemporary style.",
+      "address": {
+        "lat": 48.87601716534769,
+        "lon": 2.315640884751615
+      },
+      "stringAddress": "34 Rue Artistique, Paris 75018",
+      "hours": "Tue-Sat: 11 am - 7 pm",
+      "tags": {
+        "country": "France",
+        "city": "Paris",
+        "provinceOrState": "",
+        "style": {
+          "eclectic": true,
+          "vintage": true,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": false,
+          "sporty": false,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "brandName": "Left Bank Luxe Co.",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 33145678901,
+      "email": "lblc@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "Left Bank Luxe Co. captures the essence of Left Bank sophistication, offering a curated selection of luxurious fashion pieces in the heart of Paris.",
+      "longDescription": "Situated in Saint-Germain-des-Prés, Left Bank Luxe Co. curates a collection of high-end fashion, embodying the timeless allure of the Left Bank. Elevate your style with a touch of Parisian luxury.",
+      "address": {
+        "lat": 48.851335990383326,
+        "lon": 2.3306245110755652
+      },
+      "stringAddress": "45 Rue de Luxe, Paris 75006",
+      "hours": "Mon-Fri: 9 am - 6 pm",
+      "tags": {
+        "country": "France",
+        "city": "Paris",
+        "provinceOrState": "",
+        "style": {
+          "eclectic": false,
+          "vintage": false,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": true,
+          "sporty": false,
+          "preppy": true
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "brandName": "Pacific Peaks Outfitters",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 6041234567,
+      "email": "mm@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "Pacific Peaks Outfitters, located in Vancouver, offers a fusion of outdoor adventure and urban style, with a collection inspired by the rugged beauty of British Columbia.",
+      "longDescription": "Immerse yourself in the spirit of the Pacific Northwest with Pacific Peaks Outfitters. From mountain trails to city streets, discover a curated selection that seamlessly blends outdoor functionality with urban aesthetics.",
+      "address": {
+        "lat": 48.87601716534769,
+        "lon": 2.315640884751615
+      },
+      "stringAddress": "789 Summit Ave, Vancouver, BC V6B 2R1",
+      "hours": "Mon-Sun: 9 am - 8 pm",
+      "tags": {
+        "country": "Canada",
+        "city": "Vancouver",
+        "provinceOrState": "British Columbia",
+        "style": {
+          "eclectic": true,
+          "vintage": false,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": false,
+          "minimalist": false,
+          "sporty": true,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "brandName": "West Coast Artisanal Knits",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 2509876543,
+      "email": "wcak@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "West Coast Artisanal Knits, nestled in Victoria, specializes in handmade knitwear crafted by local artisans, offering cozy and sustainable fashion for every season.",
+      "longDescription": "Located on Vancouver Island, West Coast Artisanal Knits celebrates the art of handcrafted knitwear. Embrace warmth and style with their collection of locally-made, sustainable knits.",
+      "address": {
+        "lat": 48.42674375717322,
+        "lon": -123.31234479143656
+      },
+      "stringAddress": "234 Knit Lane, Victoria, BC V8R 1G9",
+      "hours": "Wed-Sat: 10 am - 6 pm",
+      "tags": {
+        "country": "Canada",
+        "city": "Victoria",
+        "provinceOrState": "British Columbia",
+        "style": {
+          "eclectic": false,
+          "vintage": true,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
           "hippie": true,
+          "minimalist": false,
+          "sporty": false,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "brandName": "Rainforest Rhythms Collective",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 6047654321,
+      "email": "rrc@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "Rainforest Rhythms Collective, situated in Whistler, invites you to explore a collection that echoes the serene beauty of the rainforest, merging sustainable fashion with artistic expression.",
+      "longDescription": "Immerse yourself in the enchanting ambiance of Rainforest Rhythms Collective. Located in the mountainous town of Whistler, this collective unveils a fashion line inspired by the rhythmic patterns of the rainforest, where sustainability meets artistic allure.",
+      "address": {
+        "lat": 50.09452765544164,
+        "lon": -122.91745338538198
+      },
+      "stringAddress": "567 Serenity St, Whistler, BC V0N 1B4",
+      "hours": "Thu-Mon: 11 am - 7 pm",
+      "tags": {
+        "country": "Canada",
+        "city": "Whistler",
+        "provinceOrState": "British Columbia",
+        "style": {
+          "eclectic": true,
+          "vintage": false,
+          "y2k": false,
+          "goth": false,
+          "anime": false,
+          "hippie": true,
+          "minimalist": false,
+          "sporty": false,
+          "preppy": false
+        }
+      },
+      "reviews": [
+        {
+          "profileName": "John Doe",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I loved all of the options here!!",
+          "numStars": 3.5
+        },
+        {
+          "profileName": "Joanna Johnson",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "The selection of clothing here unmatched, would highly recommend a visit :))",
+          "numStars": 4
+        },
+        {
+          "profileName": "Victor James",
+          "profilePng": "https://drive.google.com/thumbnail?id=1ebEwxuTNL9QSU45k01l65Ezq3rZzDcrJ",
+          "comment": "I had so much fun trying on cool and unique pieces!",
+          "numStars": 5
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "brandName": "GreenGlow Collective",
+      "administratorName": "Sarah Adams",
+      "phoneNumber": 81345678901,
+      "email": "ggc@gmail.com",
+      "brandLogo": "https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg",
+      "shortDescription": "GreenGlow Collective is your gateway to sustainable fashion with a futuristic twist. Embrace Y2K nostalgia and Anime-inspired aesthetics crafted from eco-friendly materials, proving that style and sustainability go hand in hand.",
+      "longDescription": "Situated in the vibrant heart of Tokyo, GreenGlow Collective redefines sustainable fashion for the modern era. Our mission is to seamlessly merge the bold, futuristic vibes of the Y2K era with the vibrant and dynamic styles inspired by Anime culture. Each piece is thoughtfully designed using eco-conscious materials, ensuring that your fashion statement leaves a positive impact on the planet. From holographic accents to recycled fabrics, GreenGlow Collective is a celebration of individuality, sustainability, and the boundless creativity that defines both the Y2K and Anime aesthetics.",
+      "address": {
+        "lat": 35.66674055392149,
+        "lon": 139.6975776081694
+      },
+      "stringAddress": "789 Futurama Street, Shibuya, Tokyo 150-0041",
+      "hours": "Mon-Sun: 11 am - 8 pm",
+      "tags": {
+        "country": "Japan",
+        "city": "Tokyo",
+        "provinceOrState": "",
+        "style": {
+          "eclectic": false,
+          "vintage": false,
+          "y2k": true,
+          "goth": false,
+          "anime": true,
+          "hippie": false,
           "minimalist": false,
           "sporty": false,
           "preppy": false
@@ -187,7 +707,10 @@
       "password": "1234",
       "phoneNumber": "4039261630",
       "email": "lavanyamenon1215@gmail.com",
-      "address": "blah",
+      "address": {
+        "lat": 42.845719,
+        "lon": -85.636217
+      },
       "style": {
         "eclectic": true,
         "vintage": false,
@@ -879,19 +1402,19 @@
       }
     },
     {
-      "id": "197b",
-      "username": "",
-      "firstName": "",
-      "lastName": "",
-      "password": "",
-      "phoneNumber": "",
-      "email": "",
+      "id": "3fe4",
+      "username": "test3",
+      "firstName": "Lavanya",
+      "lastName": "Menon",
+      "password": "1234",
+      "phoneNumber": "4039261630",
+      "email": "lavanyamenon1215@gmail.com",
       "address": {
-        "lat": 0,
-        "lon": 0
+        "lat": 40.7220566,
+        "lon": -73.9999243
       },
       "style": {
-        "eclectic": false,
+        "eclectic": true,
         "vintage": false,
         "y2k": false,
         "goth": false,

@@ -1,13 +1,8 @@
 import React, { useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function SignUpForm () {
-
-    // TODO: 
-    // [ X ] persist this data to a JSON server 
-    // [ X ] query and API endpoint to get the (lat,lon) coordinates of a 
-    //      person's address and store that instead of a string address 
-    // [ X ] integrate this component into the login form page 
-    // [   ] if there is time, allow a user to add a profile pic to a user's profile 
+  const navigate = useNavigate();
 
   const eclecticRef = useRef(null)
   const vintageRef = useRef(null)
@@ -19,7 +14,7 @@ function SignUpForm () {
   const sportyRef = useRef(null)
   const preppyRef = useRef(null)
 
-  const API_Key = '';
+  const API_Key = '901e6eac63msh5582d3c66c4543cp1aec7fjsne11d6a954fdc';
 
   const SignUp = async (e) => {
     e.preventDefault();
@@ -102,7 +97,21 @@ function SignUpForm () {
       method: 'POST',
       body: JSON.stringify(user)
     })
-    console.log(user)
+
+    const response = await fetch('http://localhost:3030/Users');
+    const users = await response.json();
+
+    var id;
+
+    users.forEach( (userFromDB) => {
+      if((user.username == userFromDB.username) && (user.password == userFromDB.password)) {
+        id = userFromDB.id
+      }
+    })
+
+    navigate('/home/' + id);
+
+    // console.log(user)
   }
 
   return (

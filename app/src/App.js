@@ -15,11 +15,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={ <Intro/> } />
-        <Route path='/home' element={ <Home/> } />
+        <Route path='/home/:userId' element={ <Home/> } />
         <Route path='/auth/' element={ <Auth authType='login'/> } />
-        <Route path='/auth/signup' element={ <Auth authType='signup'/> } />
-        <Route path='/stores' element={ <Stores/> } />
-        <Route path='/stores/:id' element={ <Store/> } />
+        <Route path='/auth/signup/' element={ <Auth authType='signup'/> } />
+        <Route path='/stores/:userId' element={ <Stores/> } />
+        <Route path='/stores/:userId/:id' element={ <Store/> } />
         <Route path='/about' element={ <About/> } />
         <Route path='/articles/1' element={ <Articles id={1}/> } />
         <Route path='/articles/2' element={ <Articles id={2}/> } />
