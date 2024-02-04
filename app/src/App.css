@@ -380,6 +380,11 @@ span {
 
 /* ------ STORES PAGE ------*/
 
+.explore-map{
+  margin:15px;
+  color: #375b32;
+}
+
 /* store list & search bar */
 .stores-level1 {
   display: flex;
@@ -426,4 +431,166 @@ span {
 .home-level1 {
   width: 100%;
   background-size: contain;
+  
+}
+
+/* SIGN UP FORM */
+
+.signUpForm{
+  background-color: #D5DCDC;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.signUpForm form{
+  height: 30%;
+  /* background-color: rebeccapurple; */
+  padding: 0 1rem;
+}
+
+.label-div, .input-div{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  caret-color: transparent;
+  /* background-color: #B87F45; */
+}
+
+.signUpForm form div input{
+  width: 80%;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  border: none;
+  align-items: center;
+  outline: none;
+}
+
+/* MAP (sizing) */
+
+.leaflet-container{
+  height: 70vh;
+  align-items: right;
+  border-radius: 1rem;
+}
+
+.homeMap{
+  height: 60vh;
+  align-items: right;
+  margin: 4%;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border-radius: 2rem;
+}
+
+.map-store-logo{
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.map-store-detail{
+  align-items: center;
+  justify-content: center;
+}
+
+.map-store-more-info{
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.map-store-widget{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+
+/* Individual Store Page */
+.store-page-img{
+  height: 50vh;
+  width: 80%;
+  background-size: contain;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 3%;
+}
+
+.store-page-outer{
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.store-page-content{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.style{
+  background-color: #c1e0bd;
+  height: fit-content;
+  width: fit-content;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.store-page-details{
+  display: grid;
+  grid-template-columns: 100px, 100px;
+}
+
+.store-page-pfp{
+  width: 50px;
+}
+
+.store-page-reviews{
+  display: grid;
+  grid-template-rows: max-content;
+  padding: 20px;
+  border-spacing: 15px;
+  width: 85%;
+}
+
+.profile-and-rating{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.profile-rating-pfp{
+  display: grid;
+  grid-template-columns: 10% 50%;
+  padding: 2px;
+}
+
+.store-page-review{
+  margin: 7px;
+  padding:5%;
+  border-style: solid;
+  border-spacing: 15px;
+}
+
+.store-page-description{
+  margin-top: 10px;
+  font-weight: 100;
 }
