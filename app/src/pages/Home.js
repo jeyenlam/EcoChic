@@ -31,19 +31,19 @@ const Home = () => {
           <h2>STORES OF THE MONTH</h2>       
           <div className='home-level2'>
             <StoreWidget
-              storeLogo={storeLogo}
-              storeName={storeName}
-              storeDescription={storeDescription}
+              storeLogo='https://media.cntraveler.com/photos/619682ab57ff29e3eed86cf0/16:9/w_2560,c_limit/Boho%20Hunter%20Wynwood_Photo%20Jul%2028,%205%2037%2043%20PM.jpg'
+              storeName='Boho Bliss Boutique'
+              storeDescription='Embrace urban sophistication with Urban Elegance Collective, where contemporary styles meet sustainable choices.'
             />
             <StoreWidget
-              storeLogo={storeLogo}
-              storeName={storeName}
-              storeDescription={storeDescription}
+              storeLogo='https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg'
+              storeName='Urban Elegance Collective'
+              storeDescription='Boho Bliss Boutique offers a curated collection of bohemian-inspired fashion, blending free-spirited styles with sustainable practices.'
             />
             <StoreWidget
-              storeLogo={storeLogo}
-              storeName={storeName}
-              storeDescription={storeDescription}
+              storeLogo='https://s3-eu-west-1.amazonaws.com/ellerman-production/ellerman-blog/wp-content/uploads/2013/04/5.jpg'
+              storeName='Sunshine Vintage Emporium'
+              storeDescription='Sunshine Vintage Emporium brings the charm of the past to present fashion, offering a carefully curated selection of timeless pieces.'
             />
           </div>
         </div> 

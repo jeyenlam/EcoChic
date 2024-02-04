@@ -8,7 +8,7 @@ import lavanyaProfile from '../pictures/lavanya-profile.JPG'
 import artImg1 from '../pictures/article1.jpeg'
 import artImg2 from '../pictures/article2.jpeg'
 import artImg3 from '../pictures/article3.jpeg'
-import { useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 
 const About = () => {
   const param = useParams().userId;
@@ -21,22 +21,27 @@ const About = () => {
       <div className='about-page page-content'>
         <div className='about-level1'>
           <h1 className='purple'>Who We Are and Our Mission</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            <span>We are EcoChic, a sustainable fashion platform that allows you to find ethical and sustainable fashion brands/stores around you. anywhere and everywhere.</span>
+            <br/>
+            <br/>
+            <span>Our mission is to educate you about the issue and give you a hub in which you can easily find stores.</span>
+          </p>
         </div>
         
         <div className='about-level2'>
-          <ArticleWidget articleImage={artImg1} articleName='What is fast fashion and why is it so bad?'/>
-          <ArticleWidget articleImage={artImg2} articleName='Why is supporting sustainable clothing brands valuable?'/>
-          <ArticleWidget articleImage={artImg3} articleName='How to spot a Fast Fashion Brand'/>
+          <ArticleWidget id='1' articleImage={artImg1} articleName='What is fast fashion and why is it so bad?'/>
+          <ArticleWidget id='2' articleImage={artImg2} articleName='Why is supporting sustainable clothing brands valuable?'/>
+          <ArticleWidget id='3' articleImage={artImg3} articleName='How to spot a Fast Fashion Brand'/>
         </div>
 
         <div className='about-level3'>
           <h1 className='blue'>Our Team</h1>
           <div className='profile-box'>
-            <Profile profile={sofiaProfile} name='Sofia Ayala' role='role' description='description'/>
-            <Profile profile={darianaProfile} name='Dariana Gonzalez' role='role' description='description'/>
-            <Profile profile={lavanyaProfile} name='Lavanya Menon' role='role' description='description'/>
-            <Profile profile={yenProfile}name='Yen Lam' role='role' description='description'/>
+            <Profile profile={sofiaProfile} name='Sofia Ayala' role='Project Manager' description=''/>
+            <Profile profile={darianaProfile} name='Dariana Gonzalez' role='UX/UI Designer' description=''/>
+            <Profile profile={lavanyaProfile} name='Lavanya Menon' role='Full Stack Developer' description=''/>
+            <Profile profile={yenProfile}name='Yen Lam' role='Full Stack Developer' description=''/>
           </div>
         </div>
       </div>
@@ -45,18 +50,25 @@ const About = () => {
   )
 }
 
-const ArticleWidget = ({articleImage, articleName}) => {
+const ArticleWidget = ({id, articleImage, articleName}) => {
+
+  const navigate = useNavigate();
+
+  const handleNavigate = (id) => {
+    navigate(`/articles/${id}`)
+  }
+
   return (
     <div className='article-widget'>
       <div className='artPic' style={{backgroundImage:`url(${articleImage})`}}></div>
-      <div className='article-info'>
+      <div className='article-info' onClick={() => handleNavigate(id)}>
         <h3>{articleName}</h3>
       </div>
     </div>
   )
 }
 
-const Profile = ({profile, name, role, description}) => {
+const Profile = ({id, profile, name, role, description}) => {
   return (
     <div className='profile-card'>
       <div className='profile' style={{backgroundImage: `url(${profile})`}}></div>

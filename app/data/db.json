@@ -1,7 +1,7 @@
 {
   "Brands": [
     {
-      "id": 1,
+      "id": "1cf1",
       "brandName": "Boho Bliss Boutique",
       "administratorName": "Sarah Adams",
       "phoneNumber": 5551234567,
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "brandName": "Urban Elegance Collective",
       "administratorName": "Sarah Adams",
       "phoneNumber": 5559876543,
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "f498",
       "brandName": "Sunshine Vintage Emporium",
       "administratorName": "Sarah Adams",
       "phoneNumber": 5552345678,
@@ -1396,54 +1396,6 @@
         "goth": false,
         "anime": false,
         "hippie": false,
-        "minimalist": false,
-        "sporty": false,
-        "preppy": false
-      }
-    },
-    {
-      "id": "db76",
-      "username": "test",
-      "firstName": "Lavanya",
-      "lastName": "Menon",
-      "password": "1234",
-      "phoneNumber": "4039261630",
-      "email": "lavanyamenon1215@gmail.com",
-      "address": {
-        "lat": 0,
-        "lon": 0
-      },
-      "style": {
-        "eclectic": true,
-        "vintage": false,
-        "y2k": false,
-        "goth": false,
-        "anime": false,
-        "hippie": true,
-        "minimalist": false,
-        "sporty": false,
-        "preppy": false
-      }
-    },
-    {
-      "id": "9f7e",
-      "username": "test1",
-      "firstName": "Lavanya",
-      "lastName": "Menon",
-      "password": "1234",
-      "phoneNumber": "4039261630",
-      "email": "lavanyamenon1215@gmail.com",
-      "address": {
-        "lat": 0,
-        "lon": 0
-      },
-      "style": {
-        "eclectic": false,
-        "vintage": false,
-        "y2k": false,
-        "goth": false,
-        "anime": true,
-        "hippie": true,
         "minimalist": false,
         "sporty": false,
         "preppy": false
