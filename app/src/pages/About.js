@@ -7,6 +7,25 @@ import yenProfile from '../pictures/yen-profile.jpeg'
 import lavanyaProfile from '../pictures/lavanya-profile.JPG'
 
 const About = () => {
+
+  const articles = {
+    art1: {
+      id: 1,
+      name: "What is fast fashion and Why is it so bad?",
+      img: darianaProfile,
+    },
+    art2: {
+      id: 2,
+      name: "What is fast fashion and Why is it so bad?",
+      img: require('../pictures/article2.jpeg'),
+    },
+    art3: {
+      id: 3,
+      name: "What is fast fashion and Why is it so bad?",
+      img: require('../pictures/article1.jpeg')
+    }    
+  }
+
   return (
     <div>
       
@@ -19,10 +38,6 @@ const About = () => {
         </div>
         
         <div className='about-level2'>
-          <img src='https://www.psdmockups.com/wp-content/uploads/2019/10/Movie-Poster-Advertising-PSD-Mockup.jpg' alt='poster1'/>
-          <img src='https://www.psdmockups.com/wp-content/uploads/2019/10/Movie-Poster-Advertising-PSD-Mockup.jpg' alt='poster2'/>
-          <img src='https://www.psdmockups.com/wp-content/uploads/2019/10/Movie-Poster-Advertising-PSD-Mockup.jpg' alt='poster3'/>
-          <img src='https://www.psdmockups.com/wp-content/uploads/2019/10/Movie-Poster-Advertising-PSD-Mockup.jpg' alt='poster4'/>
         </div>
 
         <div className='about-level3'>
@@ -37,6 +52,17 @@ const About = () => {
         </div>
       </div>
 
+    </div>
+  )
+}
+
+const ArticleWidget = (articleImage, articleName) => {
+  return (
+    <div className='article-widget'>
+      <div className='artPic' style={{backgroundImage:`url(${articleImage})`}}></div>
+      <div className='article-info'>
+        <h3>{articleName}</h3>
+      </div>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Auth from './pages/Auth';
 import Stores from './pages/Stores';
 import About from './pages/About';
 import Intro from './pages/Intro';
-import SignUpForm from './components/SignUpForm'
+import SignUpForm from './components/SignUpForm';
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
       <Routes>
         <Route index element={ <Intro/> } />
         <Route path='/home' element={ <Home/> } />
-        <Route path='/auth' element={ <Auth/> } />
+        <Route path='/auth/' element={ <Auth authType='login'/> } />
+        <Route path='/auth/signup' element={ <Auth authType='signup'/> } />
         <Route path='/stores' element={ <Stores/> } />
         <Route path='/about' element={ <About/> } />
-        <Route path='/signUp' element={ <SignUpForm/> } />
       </Routes>
     </BrowserRouter>
   );

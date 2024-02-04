@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
-import Navbar from '../components/Navbar.js'
+import React, { useRef } from 'react'
 
 function SignUpForm () {
 
@@ -20,7 +19,7 @@ function SignUpForm () {
   const sportyRef = useRef(null)
   const preppyRef = useRef(null)
 
-  const API_Key = '';
+  const API_Key = '901e6eac63msh5582d3c66c4543cp1aec7fjsne11d6a954fdc';
 
   const SignUp = async (e) => {
     e.preventDefault();
@@ -32,12 +31,10 @@ function SignUpForm () {
 
     const fetchLatLon = async () => {
       const address = formData.address;
-      console.log(address)
       let baseUrl = 'https://google-maps-geocoding.p.rapidapi.com/geocode/json?address='
       const tokens = address.split(' ');
 
       tokens.map((token, index) => {
-        console.log(token)
         if (index === 0){
           baseUrl += token;
         }
@@ -108,63 +105,81 @@ function SignUpForm () {
     console.log(user)
   }
 
-
   return (
     <div className='signUpForm'>
-        <Navbar/>
-      <h1>SignUp</h1>
+      
+      <div className='form-header'>
+        <h1 className='purple'>SignUp</h1>
+      </div>
+      
       <form id='signUpForm' onSubmit={SignUp}>
-        <div className='input-div'>
-            <label htmlFor='firstName'>First Name</label>
-            <input type='text' id='firstName' name='firstName'placeholder='First Name' />
+        <div className='form-category2'>
+          <label htmlFor='firstName'>First Name</label>
+          <input type='text' id='firstName' name='firstName'placeholder='First Name' />
+        </div>
+        <div className='form-category2'>
+          <label htmlFor='lastName'>Last Name</label>
+          <input type='text' id='lastName' name='lastName' placeholder='Last Name'/>
+        </div>
+        <div className='form-category2'>
+          <label htmlFor='username'>Username</label>
+          <input type='text' id='username' name='username'placeholder='Username' />
+        </div>
+        <div className='form-category2'>
+          <label htmlFor='password'>Password</label>
+          <input type='password' id='password' name='password' placeholder='Password'/>
+        </div>
+        <div className='form-category2'>
+          <label htmlFor='email'>Email</label>
+          <input type='text' id='email' name='email'placeholder='Email' />
+        </div>
+        <div className='form-category2'>
+          <label htmlFor='phoneNumber'>Phone Number</label>
+          <input type='text' id='phoneNumber' name='phoneNumber' placeholder='Phone Number'/>
+        </div>
+        <div className='form-category2'>
+          <label htmlFor='address'>Address</label>
+          <input type='text' id='address' name='address'placeholder='Address' />
+        </div>
+        
+        
+        <div className='sub-form'>
+          
+          <label className='purple' htmlFor='style'>What type of style do you gravitate towards?</label>
 
-            <label htmlFor='lastName'>Last Name</label>
-            <input type='text' id='lastName' name='lastName' placeholder='Last Name'/>
+          <div className='bunchOfCheckboxes'> 
 
-            <label htmlFor='username'>Username</label>
-            <input type='text' id='username' name='username'placeholder='Username' />
+              <label htmlFor='eclectic'>Eclectic</label>
+              <input type='checkbox' defaultChecked={false} ref={eclecticRef}/>
 
-            <label htmlFor='password'>Password</label>
-            <input type='password' id='password' name='password' placeholder='Password'/>
+              <label htmlFor='vintage'>Vintage</label>
+              <input type='checkbox' defaultChecked={false} ref={vintageRef}/>
 
-            <label htmlFor='email'>Email</label>
-            <input type='text' id='email' name='email'placeholder='Email' />
+              <label htmlFor='y2k'>Y2k</label>
+              <input type='checkbox' defaultChecked={false} ref={y2kRef}/>
 
-            <label htmlFor='phoneNumber'>Phone Number</label>
-            <input type='text' id='phoneNumber' name='phoneNumber' placeholder='Phone Number'/>
+              <label htmlFor='goth'>Goth</label>
+              <input type='checkbox' defaultChecked={false} ref={gothRef}/>
 
-            <label htmlFor='address'>Address</label>
-            <input type='text' id='address' name='address'placeholder='Address' />
+              <label htmlFor='anime'>Anime</label>
+              <input type='checkbox' defaultChecked={false} ref={animeRef}/>
 
-            <label htmlFor='style'>What type of style do you gravitate towards?</label>
-            <label htmlFor='eclectic'>Eclectic</label>
-            <input type='checkbox' defaultChecked={false} ref={eclecticRef}/>
+              <label htmlFor='hippie'>Hippie</label>
+              <input type='checkbox' defaultChecked={false} ref={hippieRef}/>
 
-            <label htmlFor='vintage'>Vintage</label>
-            <input type='checkbox' defaultChecked={false} ref={vintageRef}/>
+              <label htmlFor='minimalist'>Minimalist</label>
+              <input type='checkbox' defaultChecked={false} ref={minimalistRef}/>
 
-            <label htmlFor='y2k'>Y2k</label>
-            <input type='checkbox' defaultChecked={false} ref={y2kRef}/>
+              <label htmlFor='sporty'>Sporty</label>
+              <input type='checkbox' defaultChecked={false} ref={sportyRef}/>
 
-            <label htmlFor='goth'>Goth</label>
-            <input type='checkbox' defaultChecked={false} ref={gothRef}/>
-
-            <label htmlFor='anime'>Anime</label>
-            <input type='checkbox' defaultChecked={false} ref={animeRef}/>
-
-            <label htmlFor='hippie'>Hippie</label>
-            <input type='checkbox' defaultChecked={false} ref={hippieRef}/>
-
-            <label htmlFor='minimalist'>Minimalist</label>
-            <input type='checkbox' defaultChecked={false} ref={minimalistRef}/>
-
-            <label htmlFor='sporty'>Sporty</label>
-            <input type='checkbox' defaultChecked={false} ref={sportyRef}/>
-
-            <label htmlFor='preppy'>Preppy</label>
-            <input type='checkbox' defaultChecked={false} ref={preppyRef} />
-        </div> 
-        <button type='submit' id='signUpButton'>Sign Up</button>       
+              <label htmlFor='preppy'>Preppy</label>
+              <input type='checkbox' defaultChecked={false} ref={preppyRef} />
+          </div>
+        </div>
+        <div className='form-footer'>
+          <button type='submit' id='signUpButton'>Sign Up</button>
+        </div>        
       </form>
     </div>
   )
