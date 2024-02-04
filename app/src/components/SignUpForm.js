@@ -19,7 +19,7 @@ function SignUpForm () {
   const sportyRef = useRef(null)
   const preppyRef = useRef(null)
 
-  const API_Key = '901e6eac63msh5582d3c66c4543cp1aec7fjsne11d6a954fdc';
+  const API_Key = '';
 
   const SignUp = async (e) => {
     e.preventDefault();
