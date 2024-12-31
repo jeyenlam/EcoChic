@@ -14,6 +14,6 @@ Discover an aesthetically pleasing hub showcasing vetted sustainable brands. Tai
 
 <h2>Built It With</h2>
 
-HTML, CSS, React.js, Node.js, RapidAPI, Figma
+HTML, CSS, React.js, RapidAPI, Figma, and other Javascript libraries
 
 For more information, go to this <a href='https://devpost.com/software/ecochic-0denl7'>link</a>
